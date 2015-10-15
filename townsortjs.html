@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Townsort-Device</title>
+        
+        
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="townsortjs.js"></script>
+    </head>
+    
+    <body>
+        <div id="box">
+            <h1>Townsort-Device</h1>
+<p> Two cities are given for example. Please enter your data in the given structure. You may edit 
+the data whenever you want. </p>
+<p> You have to give the coordinates in one of the both ways shown (you can put the hemisphere information wherever you want).
+The programm will convert the coordinates into decimal degrees. If you don't know the minutes or seconds, this is not a problem.
+ Negative values indicate the southern/western hemisphere.
+ You can also get your current position via Google. </p>
+            <ol id="townlist" contenteditable="false">
+                <li>Examplecity1; 12.2; 9.5; 118000</li>
+                <li>Examplecity2; 54°5'20''N; 12°8'O; 310000</li>
+            </ol>
+        </div>
+        <input id="edit" type="button" value="Edit" />
+        <input id="clear" type="button" value="Clear" />
+	<input id="people" type="button" value="Sort by Inhabitants" />
+	<input id="name" type="button" value="Sort by Names" />
+	<input id="lat" type="button" value="Sort by Latitude" />
+	<input id="lon" type="button" value="Sort by Longitude" />
+	<div>
+	<input id="degree" type="button" value="Get my coordinates via Google" />
+	</div>
+
+    </body>
+</html>
